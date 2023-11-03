@@ -12,4 +12,8 @@ describe('isCellLiving()', function() {
         expect(cellWithOneNeighbor).to.be.false;
     });
 
+    it('should return false if cell have more 4 neighbor', () => {
+        const cellWithOneNeighbor = isCellLiving(4);
+        expect(cellWithOneNeighbor).to.be.false;
+    });
 })
