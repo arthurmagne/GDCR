@@ -1,6 +1,7 @@
 export function isCellLiving(numberOfNeighbor) {
-    if(numberOfNeighbor<2) {
+    if (numberOfNeighbor >= 2) {
+        return true;
+    } else {
         return false;
     }
-    return true;
 }
